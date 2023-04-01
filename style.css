@@ -16,7 +16,8 @@
 }
 
 body {
-    background-color: #4e51bf;
+   
+    font-family: "Rubik";
 }
 
 .ambiente {
@@ -76,10 +77,9 @@ body {
     background-image: url("");
 }
 
+/* Dados da API Instagram */
 .profile-box {
     border: var(--borda-cor);
-    
-   
     left: 0;
     display: flex;
     justify-content: left;
@@ -90,14 +90,37 @@ body {
     z-index: 99;
 }
 
-.profile {
+.profile-area {
+    display: flex;
+    align-items: end;
+    text-align: center;
     border: var(--borda-cor);
     background-color: #ffe9ce;
     border-radius: 60px;
-    left: 0;
-
     width: 400px;
     height:250px;
     z-index: 99;
+}
+
+.profile-info {
+    font-weight: 500;
+    line-height: 2em;
+    font-size: 20px;
+    padding: 10px;
+    border: var(--borda-cor);
+    width: 320px;
+    height:180px;
+    z-index: 99;
+}
+.username {
+    text-align: left;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.profile-stats {
+    display: flex;
+    justify-content: space-between;
+
 }
 
