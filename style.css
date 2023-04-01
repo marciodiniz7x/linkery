@@ -107,6 +107,7 @@ body {
     line-height: 2em;
     font-size: 20px;
     padding: 10px;
+    margin-left: 20px;
     border: var(--borda-cor);
     width: 320px;
     height:180px;
