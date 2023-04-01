@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+/* Import Fonte NeoSans */
+@font-face {
+    font-family: 'NeoSans';
+    src: url('fonts/NeoSans-Black.otf') format('opentype');
+}
+
 /* Variáveis */
 :root {
     --borda-cor: 1px solid #0099ff;
@@ -30,20 +36,36 @@ body {
     background-color: #4e51bf;
     position: fixed;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: top;
     border: var(--borda-cor);
     border-radius: 60px;
     width: 100%;
     height: 300px;
 }
 
+.header section {
+    border: var(--borda-cor);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height:100px;
+    width: 100%;
+}
+
+.menu {
+    color: white;
+    font-size: 30px;
+}
+
 .profile-pic {
     border: var(--borda-cor);
-    margin-top: 20px;
+
     width:80px;
     height: 80px;
     border-radius: 50%;
-    
+  
 }
 
 .profile-box {
