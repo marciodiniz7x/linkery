@@ -62,19 +62,18 @@ body {
     font-size: 30px;
 }
 
+/* Link da foto baseada no perfil do Instagram */
 .profile-pic {
-    border: var(--borda-cor);
-
+    border: 7px solid white;
+    display: block;
+    overflow: hidden;
     width:80px;
     height: 80px;
     border-radius: 50%;
     background-size: cover;
-    background-position: center;
-
 }
-/* Link da foto baseada no perfil do Instagram */
 .profile-pic {
-    background-image: url('URL_DA_IMAGEM');
+    background-image: url("");
 }
 
 .profile-box {
