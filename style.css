@@ -25,7 +25,7 @@ body {
 }
 
 .ambiente {
-    /* overflow: hidden; */
+    overflow: hidden;
     
     border-radius: 60px;
     box-shadow: 1px 1px 50px 0px rgb(99, 96, 96);
@@ -134,7 +134,8 @@ body {
     background-color: #ffe9ce;
     color: #4e4b57;
     border-radius: 60px;
-    border-bottom-left-radius: 0px;
+    border-bottom-left-radius: 0;
+    margin-top: -50px;
     width: 400px;
     height: 250px;
     z-index: 99;
@@ -145,7 +146,7 @@ body {
 .lua .figura {
 
     left: 0;
-    top: 350px;
+    top: 310px;
     position: absolute;
     width: 70px;
     height: 100px;
@@ -155,8 +156,8 @@ body {
 
 .lua .modelador {
 
-    left: 10px;
-    top: 381px;
+    left: 8px;
+    top: 355px;
     border-radius: 50%;
     position: absolute;
     width: 100px;
