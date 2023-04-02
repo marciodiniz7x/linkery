@@ -28,13 +28,15 @@ body {
     border-radius: 60px;
     box-shadow: 1px 1px 50px 0px rgb(99, 96, 96);
     background-color: white;
+    margin-top: 5px;
     margin-left: 50%;
     transform: translateX(-50%);
     position: relative;
 
     display: flex;
     justify-content: center;
-    width: 480px;
+    
+    width: 100vw;
     height: 900px;
 }
 
@@ -96,7 +98,7 @@ body {
 }
 
 .profile-area {
-    position: fixed;
+    
     overflow: hidden;
     display: flex;
     align-items: end;
@@ -105,12 +107,10 @@ body {
     color: #4e4b57;
     border-radius: 60px;
     border-bottom-left-radius: 0px;
-    width: 400px;
+    width: 80%;
     height: 250px;
     z-index: 99;
 }
-
-
 
 .lua .figura {
     left: 0;
@@ -135,17 +135,29 @@ body {
 }
 
 /* Design Circles */
+.elem-area {
+    border: 1px solid red;
+    overflow: hidden;
+    display: flex;
+    justify-content: right;
+    color: #4e4b57;
+    border-radius: 60px;
+    border-bottom-left-radius: 0px;
+    width: 100%;
+    height: 250px;
+    z-index: 99;
+}
+
 .elems01 {
     overflow: hidden;
     position: relative;
     margin: -10px -29px;
     border-top-right-radius: 60px;
-    position: fixed;
-    border: var(--borda-cor);
+    
+    border: 1px solid red;
     width: 200px;
     height: 150px;
-    left: 229px;
-    top: 150px;
+
 }
 .elems01 .circle01 {
     position: relative;
@@ -220,6 +232,8 @@ body {
 
 
 /* Links */
+
+
 .buttons {
 
     position: fixed;
@@ -227,18 +241,58 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 25px 34px;
+    padding: 45px 34px;
     margin-top: 410px;
-    width: 90%;
+    width: 450px;
     height: 450px;
 }
+
 .btn-box {
- 
-    width: 115%;
-    height: 80px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    padding: 0 30px;
+    width: 100%;
+    height: 70px;
     border-radius: 50px;
     background-color: #f4f5fe;
     cursor: pointer;
+    transition: 400ms;
+}
+.btn-box:hover {
+    background-color: #bbbde9;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    
+}
+.but1 .icon {
+    background-image: url(img/github.png);
+    background-size: cover;
+    background-position: center;
+}
+.but2 .icon {
+    background-image: url(img/linkedin.png);
+    background-size: cover;
+    background-position: center;
+}
+.but3 .icon {
+    background-image: url(img/whatsapp.png);
+    background-size: cover;
+    background-position: center;
+}
+.but4 .icon {
+    background-image: url(img/instagram.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.text {
+    font-weight: 500;
+    font-size: 20px;
 }
 
 
