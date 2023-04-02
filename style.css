@@ -13,15 +13,20 @@
 /* Variáveis */
 :root {
     --borda-cor: 1px solid #0099ff;
+    --borda-cor: none;
 }
 
 body {
-   
+    display: flex;
+    background-color: #e2e5ff;
     font-family: "Rubik";
 }
 
 .ambiente {
-    border: var(--borda-cor);
+    overflow: hidden;
+    
+    border-radius: 60px;
+    box-shadow: 1px 1px 50px 0px rgb(99, 96, 96);
     background-color: white;
     margin-left: 50%;
     transform: translateX(-50%);
@@ -29,7 +34,7 @@ body {
 
     display: flex;
     justify-content: center;
-    width: 500px;
+    width: 480px;
     height: 900px;
 }
 
@@ -61,59 +66,146 @@ body {
 .menu {
     color: white;
     font-size: 30px;
+    cursor: pointer;
 }
 
-/* Link da foto baseada no perfil do Instagram */
+/* Dados da API Instagram */
 .profile-pic {
-    border: 7px solid white;
+    border: 5px solid #ff92a4;
     display: block;
     overflow: hidden;
-    width:80px;
+    width: 80px;
     height: 80px;
     border-radius: 50%;
     background-size: cover;
 }
 .profile-pic {
-    background-image: url("");
+    background-image: url("img/profile.png");
 }
 
-/* Dados da API Instagram */
 .profile-box {
     border: var(--borda-cor);
     left: 0;
     display: flex;
     justify-content: left;
     align-items: center;
-    margin-top: 170px;
+    margin-top: 140px;
     width: 100%;
     height:250px;
     z-index: 99;
 }
 
 .profile-area {
+    position: fixed;
+    overflow: hidden;
     display: flex;
     align-items: end;
     text-align: center;
-    border: var(--borda-cor);
     background-color: #ffe9ce;
+    color: #4e4b57;
     border-radius: 60px;
+    border-bottom-left-radius: 0px;
     width: 400px;
-    height:250px;
+    height: 250px;
     z-index: 99;
 }
 
+
+
+.lua .figura {
+    left: 0;
+    top: 350px;
+    position: absolute;
+    width: 70px;
+    height: 100px;
+    background-color: #ffe9ce;
+    z-index: -99;
+}
+
+.lua .modelador {
+    left: 9px;
+    top: 381px;
+    border-radius: 50%;
+    position: absolute;
+    width: 100px;
+    height: 120px;
+    background-color: white;
+    transform: rotate(80deg);
+    z-index: -99;
+}
+
+/* Design Circles */
+.elems01 {
+    overflow: hidden;
+    position: relative;
+    margin: -10px -29px;
+    border-top-right-radius: 60px;
+    position: fixed;
+    border: var(--borda-cor);
+    width: 200px;
+    height: 150px;
+    left: 229px;
+    top: 150px;
+}
+.elems01 .circle01 {
+    position: relative;
+    display: flex;
+    background-color: white;
+    margin: -50px 50px 0px;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+}
+.elems01 .circle02 {
+    
+    background-color: #ffdd83;
+    
+    
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    
+}
+
+.elems01 .circle03 {
+    position: absolute;
+    background-color: #4e51bf;
+    margin: -90px 8px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    z-index: 99;
+}
+
+.elems01 .circle04 {
+    position: absolute;
+    background-color: #ff92a4;
+    margin: -20px 140px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    z-index: 99;
+}
+
+/* Dados do perfil do Instagram */
 .profile-info {
+    position: fixed;
     font-weight: 500;
     line-height: 2em;
     font-size: 20px;
     padding: 10px;
     margin-left: 20px;
+    
     border: var(--borda-cor);
     width: 320px;
     height:180px;
     z-index: 99;
 }
+
 .username {
+    font-style: italic;
     text-align: left;
     margin-top: 20px;
     font-size: 16px;
@@ -123,5 +215,37 @@ body {
     display: flex;
     justify-content: space-between;
 
+}
+
+
+
+/* Links */
+.buttons {
+
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 34px;
+    margin-top: 410px;
+    width: 90%;
+    height: 450px;
+}
+.btn-box {
+ 
+    width: 115%;
+    height: 80px;
+    border-radius: 50px;
+    background-color: #f4f5fe;
+    cursor: pointer;
+}
+
+
+footer {
+    position: absolute;
+    bottom: 1%;
+    font-size: 14px;
+    color: #61606e;
 }
 
