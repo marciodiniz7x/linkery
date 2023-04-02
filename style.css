@@ -126,7 +126,7 @@ body {
 }
 
 .profile-area {
-
+    position: fixed;
     overflow: hidden;
     display: flex;
     align-items: end;
@@ -135,7 +135,7 @@ body {
     color: #4e4b57;
     border-radius: 60px;
     border-bottom-left-radius: 0px;
-    width: 80%;
+    width: 400px;
     height: 250px;
     z-index: 99;
 }
