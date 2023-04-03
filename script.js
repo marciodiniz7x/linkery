@@ -1,5 +1,8 @@
 // Solicita dados à API do Instagram
 
+require('dotenv').config()
+
+
 $.ajax({
 
     url: "https://graph.instagram.com/{user-id}?fields=id,username,account_type,media_count,follows_count,followed_by_count&access_token={Aqui vai o token da API}",
