@@ -65,11 +65,10 @@ body {
     
     border-top-right-radius: 60px;
     border-top-left-radius: 60px;
-    border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
-    
+
     width: 70vw;
-    height: 300px;
+    height: 200px;
 }
 
 /* Header para telas menores que 768 pixels */
@@ -82,7 +81,6 @@ body {
 }
 
 .header section {
-    border: var(--borda-cor);
 
     padding: 20px;
     display: flex;
