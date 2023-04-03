@@ -55,6 +55,13 @@ body {
     }
 }
 
+@media (min-width: 600px) {
+
+    .ambiente {
+        width: 480px;
+    }
+}
+
 .header {
     background-color: #4e51bf;
     position: fixed;
@@ -77,6 +84,14 @@ body {
         border-top-right-radius: 0px;
         border-top-left-radius: 0px;
         width: 100vw;
+    }
+}
+
+@media (min-width: 600px) {
+    .header {
+        border-top-right-radius: 60px;
+        border-top-left-radius: 60px;
+        width: 480px;
     }
 }
 
