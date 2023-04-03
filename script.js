@@ -17,9 +17,3 @@ $.ajax({
 // Seletor
 const menu = document.querySelector('.menu');
 const ambiente = document.querySelector('.ambiente');
-
-// Evento menu
-menu.addEventListener('click', () => {
-    alert('clicou');
-    ambiente.style.filter = "var(--blur-on)";
-});
