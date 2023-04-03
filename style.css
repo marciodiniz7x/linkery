@@ -152,12 +152,20 @@ body {
 
 .username {
 
-    font-size: 16px;
+    font-size: 24px;
+    text-shadow: 2px 2px 10px #bbbde9e8;
+    
 }
 
 
 
 /* Links */
+
+a {
+    text-decoration: none;
+    color: #61606e;
+    
+}
 .buttons {
 
     position: fixed;
@@ -169,7 +177,7 @@ body {
     margin-top: 220px;
     width: 450px;
     height: 500px;
-    
+
 }
 
 .btn-box {
@@ -178,12 +186,13 @@ body {
     gap: 20px;
     box-shadow: 5px 5px 10px 1px #bbbde9;
     padding: 0 30px;
-    width: 100%;
+    width: 320px;
     height: 70px;
     border-radius: 50px;
     background-color: #f4f5fe;
     cursor: pointer;
     transition: 400ms;
+    
 }
 .btn-box:hover {
     background-color: #bbbde9;
