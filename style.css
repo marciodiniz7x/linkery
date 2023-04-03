@@ -115,6 +115,24 @@ body {
 }
 
 /* Dados da API Instagram */
+.profile-pic-user {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.logo-name {
+
+    font-size: 24px;
+    text-shadow: 2px 2px 10px #bbbde9e8;
+
+}
+
+.user {
+    font-size: 14px;
+}
+
 .profile-pic {
     border: 5px solid #bbbde9;
     display: block;
@@ -152,16 +170,6 @@ body {
     margin-top: -20px;
     width: 380px;
 }
-
-.username {
-
-    font-size: 24px;
-    text-shadow: 2px 2px 10px #bbbde9e8;
-
-}
-
-
-
 /* Links */
 
 a {
