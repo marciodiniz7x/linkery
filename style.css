@@ -30,7 +30,7 @@ body {
     border-radius: 60px;
     box-shadow: 1px 1px 50px 0px rgb(99, 96, 96);
     background-color: white;
-    margin-top: 5px;
+    margin-top: 25px;
 
     position: relative;
 
@@ -39,7 +39,7 @@ body {
     
     width: 70vw;
 
-    height: 95vh;
+    height: 90vh;
 }
 
 /* Body e .ambiente para telas menores que 600 pixels */
