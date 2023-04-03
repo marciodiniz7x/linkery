@@ -133,18 +133,17 @@ body {
     color: #4e4b57;
     border-radius: 60px;
     border-bottom-left-radius: 0;
-    margin-top: -50px;
+    margin-top: -100px;
     width: 400px;
-    height: 250px;
+    height: 200px;
     z-index: 99;
 }
-
 
 
 .lua .figura {
 
     left: 0;
-    top: 310px;
+    top: 290px;
     position: absolute;
     width: 70px;
     height: 100px;
@@ -154,8 +153,20 @@ body {
 
 .lua .modelador {
 
-    left: 8px;
-    top: 355px;
+    left: 10px;
+    top: 305px;
+    border-radius: 50%;
+    position: absolute;
+    width: 100px;
+    height: 120px;
+    background-color: white;
+    transform: rotate(80deg);
+
+}
+.lua .modelador2 {
+
+    left: -10px;
+    top: 340px;
     border-radius: 50%;
     position: absolute;
     width: 100px;
@@ -182,7 +193,7 @@ body {
 .elems01 {
     overflow: hidden;
     position: relative;
-    margin: -10px -29px;
+    margin: 40px -19px;
     border-top-right-radius: 60px;
     width: 200px;
     height: 150px;
@@ -238,7 +249,8 @@ body {
     font-size: 20px;
     padding: 10px;
     margin-left: 20px;
-    
+    display: flex;
+    justify-content: space-between;
     border: var(--borda-cor);
     width: 320px;
     height:180px;
@@ -255,7 +267,8 @@ body {
 .profile-stats {
     display: flex;
     justify-content: space-between;
-
+    margin-top: 15px;
+    width: 320px;
 }
 
 
@@ -271,7 +284,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 45px 34px;
-    margin-top: 380px;
+    margin-top: 320px;
     width: 450px;
     height: 450px;
 }
