@@ -107,12 +107,25 @@ body {
     color: #e2e5ff;
 }
 
-.menu {
-    border: 1px solid red;
+.menu-superior {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 25px;
     color: #e2e5ff;
-    font-size: 30px;
-    cursor: pointer;
+    font-size: 20px;
+    
     z-index: 99;
+
+}
+.menu-superior a {
+    color: #e2e5ff;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+.active {
+    color: #4e51bf;
 }
 
 /* Dados da API Instagram */
@@ -126,15 +139,16 @@ body {
 .logo-name {
 
     padding: 7px;
-
+    font-weight: 500;
     font-size: 24px;
-    text-shadow: 1px 1px 5px #bbbde9e8;
+
 
 }
 
 .user {
     font-size: 14px;
 }
+
 
 .profile-pic {
     border: 5px solid #bbbde9;

@@ -1,22 +1,10 @@
-// Solicita dados à API do Instagram
+const menuItems = document.querySelectorAll('nav ul a');
 
-require('dotenv').config()
-
-
-$.ajax({
-
-    url: "https://graph.instagram.com/{user-id}?fields=id,username,account_type,media_count,follows_count,followed_by_count&access_token={Aqui vai o token da API}",
-    method: "GET",
-    dataType: "json",
-    success: function(response) {
-        // Lida com a resposta da API aqui
-    },
-    error: function(error) {
-        console.log(error);
-    }
-
+menuItems.forEach(item => {
+  item.addEventListener('click', e => {
+    e.preventDefault();
+    menuItems.forEach(item => item.classList.remove('active'));
+    item.classList.add('active');
+  });
 });
 
-// Seletor
-const menu = document.querySelector('.menu');
-const ambiente = document.querySelector('.ambiente');
