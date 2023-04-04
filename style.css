@@ -134,6 +134,8 @@ body {
 }
 
 
+
+
 .profile-pic {
     border: 5px solid #61606e;
     display: block;
@@ -276,6 +278,34 @@ footer {
     font-size: 14px;
     color: #61606e;
 }
+
+/* Animações */
+
+.glitch {
+    animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+    }
+
+    @keyframes glitch {
+    0% {
+        transform: translate(0);
+    }
+    20% {
+        transform: translate(-5px, 5px);
+    }
+    40% {
+        transform: translate(5px, -5px);
+    }
+    60% {
+        transform: translate(-5px, -5px);
+    }
+    80% {
+        transform: translate(5px, 5px);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+  
 
 @keyframes changeColor {
     0% {
