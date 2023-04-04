@@ -73,7 +73,6 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     align-items: top;
-    border: var(--borda-cor);
     box-shadow: 0px 10px #bbbde9 ;
     width: 480vw;
     height: 190px;
@@ -97,31 +96,14 @@ body {
 }
 
 .header section {
-
     padding: 20px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    height:100px;
+    justify-content: center;
+    margin-top: 30px;
+    height:150px;
     width: 90%;
     color: #e2e5ff;
-}
-
-.menu-superior {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-    gap: 25px;
-    color: #e2e5ff;
-    font-size: 20px;
-    
-    z-index: 99;
-
-}
-.menu-superior a {
-    color: #e2e5ff;
-    font-weight: 100;
-    cursor: pointer;
 }
 
 .active {
@@ -130,35 +112,37 @@ body {
 
 /* Dados da API Instagram */
 .profile-pic-user {
+
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
     gap: 10px;
 }
 
-.logo-name {
-
-    padding: 7px;
-    font-weight: 500;
-    font-size: 24px;
-
-
-}
-
 .user {
-    font-size: 14px;
+    font-size: 20px;
+}
+.user .name1 {
+    margin-left: 0px;
+    text-shadow: 2px 2px 1px #fd3995;
+}
+.user .name2 {
+    margin-left: 31px;
+    margin-top: -8px;
+    text-shadow: 2px 2px 1px #676bcf;
 }
 
 
 .profile-pic {
-    border: 5px solid #bbbde9;
+    border: 5px solid #61606e;
     display: block;
     overflow: hidden;
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     background-size: cover;
-    
+    animation: changeColor 5s infinite linear;
 }
 .profile-pic {
     background-image: url("img/profile.png");
@@ -191,7 +175,7 @@ body {
 /* Faixa */
 .faixa {
     display: flex;
-    margin-top: 90px;
+    margin-top: 10px;
     height: 10px;
     width: 100%;
     background-color: #bbbde9;
@@ -291,4 +275,22 @@ footer {
     
     font-size: 14px;
     color: #61606e;
+}
+
+@keyframes changeColor {
+    0% {
+        border: 5px solid #61606e;
+    }
+    25% {
+        border: 5px solid #61606e;
+    }
+    50% {
+        border: 5px solid #ffe600;
+    }
+    75% {
+        border: 5px solid #ff0077;
+    }
+    100% {
+        border: 5px solid #4e51bf;
+    }
 }
