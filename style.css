@@ -142,7 +142,7 @@ body {
     height: 80px;
     border-radius: 50%;
     background-size: cover;
-    animation: changeColor 5s infinite linear;
+    animation: changeColor 8s infinite linear;
 }
 .profile-pic {
     background-image: url("img/profile.png");
@@ -282,7 +282,7 @@ footer {
         border: 5px solid #61606e;
     }
     25% {
-        border: 5px solid #61606e;
+        border: 5px solid #bbbde9;
     }
     50% {
         border: 5px solid #ffe600;
